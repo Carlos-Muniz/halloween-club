@@ -1,3 +1,7 @@
+/* * {
+  outline: red solid 1px;
+} */
+
 html {
   font-family: serif;
   font-size: 16px;
@@ -10,7 +14,7 @@ html {
   height: 1920px;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(60, 1fr);
-  grid-row-gap: 20px;
+  grid-row-gap: 10px;
   margin: 0 auto;
 }
 
@@ -50,7 +54,7 @@ header {
 }
 
 #about {
-  grid-area: 3 / 1 / span 16 / span 8;
+  grid-area: 3 / 1 / span 12 / span 8;
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -59,50 +63,84 @@ header {
 }
 
 #box {
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 10px 0px;
-    width: 80%;
-    margin: 0 auto;
-  }
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px 0px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.images img {
+  max-height: 100%;
+  height: auto;
+  max-width: 254px;
+}
 
 #images1 {
-  grid-area: 19 / 1 / span 6 / span 8;
-  display: inline-flex;
-  align-items: center;
+  grid-area: 15 / 1 / span 7 / span 8;
 }
 
 #events {
-  grid-area: 17 / 1 / span 6 / span 8;
-  display: inline-flex;
+  grid-area: 22 / 1 / span 5 / span 8;
+  display: flex;
   align-items: center;
+  justify-content: space-evenly;
+}
+
+#left-list {
+  text-align: left;
 }
 
 #images2 {
-  grid-area: 23 / 1 / span 6 / span 8;
-  display: inline-flex;
-  align-items: center;
+  grid-area: 27 / 1 / span 7 / span 8;
 }
 
 #media {
-  grid-area: 29 / 1 / span 6 / span 8;
-  display: inline-flex;
+  grid-area: 34 / 1 / span 14 / span 8;
+  display: block;
   align-items: center;
+}
+
+#media-items {
+  height: 100%;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#media-items figure {
+  max-height: 50%;
+  max-width: 204px;
+}
+
+#media-items img {
+  height: 80%;
+}
+
+
+#media-items figcaption {
+  font-size: 0.75rem;
 }
 
 #images3 {
-  grid-area: 35 / 1 / span 6 / span 8;
-  display: inline-flex;
-  align-items: center;
+  grid-area: 49 / 1 / span 7 / span 8;
 }
 
 #join {
-  grid-area: 41 / 1 / span 6 / span 8;
-  display: inline-flex;
+  grid-area: 56 / 1 / span 4 / span 8;
+  display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 footer {
-  grid-area: 47 / 1 / span 1 / span 8;
+  grid-area: 60 / 1 / span 1 / span 8;
   display: inline-flex;
   align-items: center;
 }
