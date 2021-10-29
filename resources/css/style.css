@@ -58,8 +58,10 @@ header {
   display: flex;
   margin: 0 auto;
   align-items: center;
-  background-image: url(../images/two-jackolanterns-1.jpg);
+  background-image: url(../images/spooky-moon.jpg);
   align-items: center;
+  background-size: cover;
+  background-position: center
 }
 
 #box {
