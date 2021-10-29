@@ -61,7 +61,7 @@ header {
   background-image: url(../images/spooky-moon.jpg);
   align-items: center;
   background-size: cover;
-  background-position: center
+  background-position: center;
 }
 
 #box {
@@ -126,7 +126,6 @@ header {
   height: 80%;
 }
 
-
 #media-items figcaption {
   font-size: 0.75rem;
 }
@@ -149,7 +148,7 @@ footer {
   margin-left: 10px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 760px) {
   header {
     justify-content: center;
   }
@@ -186,5 +185,4 @@ footer {
   #join h2 {
     font-size: 1.5rem;
   }
-
 }
