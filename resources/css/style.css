@@ -146,4 +146,45 @@ footer {
   grid-area: 60 / 1 / span 1 / span 8;
   display: inline-flex;
   align-items: center;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  header {
+    justify-content: center;
+  }
+  #links {
+    display: none;
+  }
+
+  #about h2 {
+    display: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #events {
+    display: block;
+    line-height: 1rem;
+  }
+
+  #events li {
+    margin: 0 2%;
+  }
+
+  #events h2 {
+    font-size: 1.2rem;
+  }
+
+  #media-items figure {
+    width: 100%;
+    height: 10%;
+  }
+
+  #join h2 {
+    font-size: 1.5rem;
+  }
+
 }
